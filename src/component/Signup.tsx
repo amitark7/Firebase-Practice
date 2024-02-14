@@ -39,7 +39,7 @@ const Signup = () => {
           onChangeText={(value)=>setPassword(value)}
           value={password}
           />
-          <TouchableOpacity style={styles.Btn}>
+          <TouchableOpacity style={styles.Btn} onPress={ButtonHandle}>
             <Text style={styles.BtnTxt}>REGISTER</Text>
           </TouchableOpacity>
       </View>
