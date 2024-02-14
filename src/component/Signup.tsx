@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TextInput, View } from 'react-native'
+import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import React, { useState } from 'react'
 
 const Signup = () => {
@@ -6,6 +6,10 @@ const Signup = () => {
   const[email,setEmail]=useState('');
   const[password,setPassword]=useState('');
   const[mobile,setMobile]=useState('');
+
+  const ButtonHandle=()=>{
+    console.log("Button Pressed..");
+  }  
 
   return (
     <View style={styles.Container}>
@@ -35,6 +39,9 @@ const Signup = () => {
           onChangeText={(value)=>setPassword(value)}
           value={password}
           />
+          <TouchableOpacity style={styles.Btn}>
+            <Text style={styles.BtnTxt}>REGISTER</Text>
+          </TouchableOpacity>
       </View>
     </View>
   )
@@ -50,19 +57,34 @@ const styles = StyleSheet.create({
   },
   SignupContainer:{
     alignItems:'center',
-    backgroundColor:'#00CCCD',
-    paddingHorizontal:20,
-    paddingVertical:20
+    backgroundColor:'#EAF0F1',
+    paddingHorizontal:40,
+    paddingVertical:20,
+    borderRadius:10
   },
   Txt:{
-    color:'#fff'
+    color:'#00CCCD',
+    fontSize:22,
+    marginBottom:10,
+    fontWeight:'bold'
   },
   input:{
-    width:180,
-    borderWidth:2,
-    borderColor:'#fff',
-    marginVertical:10,
+    width:200,
+    borderBottomWidth:2,
+    borderColor:'#00CCCD',
+    marginVertical:6,
+  },
+  Btn:{
+    width:130,
+    backgroundColor:'#00CCCD',
     borderRadius:8,
-    paddingLeft:10
+    marginTop:10
+  },
+  BtnTxt:{
+    alignSelf:'center',
+    paddingHorizontal:10,
+    paddingVertical:10,
+    color:'#fff',
+    fontWeight:'900'
   }
 })
