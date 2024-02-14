@@ -5,7 +5,7 @@ const Signup = () => {
   const[name,setName]=useState('');
   const[email,setEmail]=useState('');
   const[password,setPassword]=useState('');
-  const[mobile,setMObile]=useState('');
+  const[mobile,setMobile]=useState('');
 
   return (
     <View style={styles.Container}>
@@ -26,14 +26,14 @@ const Signup = () => {
           <TextInput 
           placeholder='Enter Name'
           style={styles.input}
-          onChangeText={(value)=>setMObile(value)}
+          onChangeText={(value)=>setMobile(value)}
           value={mobile}
           />
           <TextInput 
           placeholder='Enter Name'
           style={styles.input}
-          onChangeText={(value)=>setName(value)}
-          value={name}
+          onChangeText={(value)=>setPassword(value)}
+          value={password}
           />
       </View>
     </View>
@@ -50,12 +50,14 @@ const styles = StyleSheet.create({
     backgroundColor:'#000'
   },
   SignupContainer:{
-    
+    alignItems:'center'
   },
   Txt:{
     color:'#fff'
   },
   input:{
-
+    height:20,
+    borderWidth:2,
+    borderColor:'#fff'
   }
 })
