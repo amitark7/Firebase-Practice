@@ -4,7 +4,7 @@ import Signup from './component/Signup'
 
 const App = () => {
   return (
-    <View>
+    <View style={styles.Container}>
       <Signup/>
     </View>
   )
@@ -12,4 +12,8 @@ const App = () => {
 
 export default App
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  Container:{
+    flex:1
+  }
+})
