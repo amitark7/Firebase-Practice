@@ -24,13 +24,13 @@ const Signup = () => {
           value={email}
           />
           <TextInput 
-          placeholder='Enter Name'
+          placeholder='Enter Mobile'
           style={styles.input}
           onChangeText={(value)=>setMobile(value)}
           value={mobile}
           />
           <TextInput 
-          placeholder='Enter Name'
+          placeholder='Enter Password'
           style={styles.input}
           onChangeText={(value)=>setPassword(value)}
           value={password}
@@ -47,17 +47,22 @@ const styles = StyleSheet.create({
     flexGrow:1,
     alignItems:'center',
     justifyContent:'center',
-    backgroundColor:'#000'
   },
   SignupContainer:{
-    alignItems:'center'
+    alignItems:'center',
+    backgroundColor:'#00CCCD',
+    paddingHorizontal:20,
+    paddingVertical:20
   },
   Txt:{
     color:'#fff'
   },
   input:{
-    height:20,
+    width:180,
     borderWidth:2,
-    borderColor:'#fff'
+    borderColor:'#fff',
+    marginVertical:10,
+    borderRadius:8,
+    paddingLeft:10
   }
 })
