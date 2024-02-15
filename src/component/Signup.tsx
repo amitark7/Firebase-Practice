@@ -20,7 +20,6 @@ const Signup = () => {
       .then(() => {
 
         console.log('User account created & signed in!');
-        
       })
       .catch(error => {
         if (error.code === 'auth/email-already-in-use') {
