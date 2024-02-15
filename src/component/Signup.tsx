@@ -26,7 +26,9 @@ const Signup = () => {
         }
 
         if (error.code === 'auth/invalid-email') {
+
           console.log('That email address is invalid!');
+          
         }
         console.error(error);
       });
