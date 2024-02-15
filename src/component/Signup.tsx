@@ -15,7 +15,6 @@ const Signup = () => {
   const [mobile, setMobile] = useState('');
 
   const ButtonHandle = () => {
-    
     auth()
       .createUserWithEmailAndPassword(email, password)
       .then(() => {
