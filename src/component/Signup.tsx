@@ -18,7 +18,6 @@ const Signup = () => {
     auth()
       .createUserWithEmailAndPassword(email, password)
       .then(() => {
-        
         console.log('User account created & signed in!');
       })
       .catch(error => {
