@@ -22,6 +22,7 @@ const Signup = () => {
       })
       .catch(error => {
         if (error.code === 'auth/email-already-in-use') {
+          
           console.log('That email address is already in use!');
         }
         if (error.code === 'auth/invalid-email') {
