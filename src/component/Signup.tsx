@@ -36,7 +36,6 @@ const Signup = () => {
       <View style={styles.SignupContainer}>
         <Text style={styles.Txt}>REGISTER</Text>
         <TextInput
-        
           placeholder="Enter Name"
           style={styles.input}
           onChangeText={value => setName(value)}
