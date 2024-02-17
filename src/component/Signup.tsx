@@ -33,7 +33,6 @@ const Signup = () => {
 
   return (
     <View style={styles.Container}>
-
       <View style={styles.SignupContainer}>
         <Text style={styles.Txt}>REGISTER</Text>
         <TextInput
