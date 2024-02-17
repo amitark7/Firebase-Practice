@@ -35,7 +35,6 @@ const Signup = () => {
     <View style={styles.Container}>
       <View style={styles.SignupContainer}>
         <Text style={styles.Txt}>REGISTER</Text>
-        
         <TextInput
           placeholder="Enter Name"
           style={styles.input}
