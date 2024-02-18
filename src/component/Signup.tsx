@@ -31,6 +31,7 @@ const Signup = () => {
       });
   };
 
+
   return (
     <View style={styles.Container}>
       <View style={styles.SignupContainer}>
