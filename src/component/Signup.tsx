@@ -46,6 +46,7 @@ const Signup = () => {
           onChangeText={value => setEmail(value)}
           value={email}
         />
+        
         <TextInput
           placeholder="Enter Mobile"
           style={styles.input}
