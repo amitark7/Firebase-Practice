@@ -40,13 +40,14 @@ const Signup = () => {
           onChangeText={value => setName(value)}
           value={name}
         />
+        
         <TextInput
           placeholder="Enter Email"
           style={styles.input}
           onChangeText={value => setEmail(value)}
           value={email}
         />
-        
+
         <TextInput
           placeholder="Enter Mobile"
           style={styles.input}
