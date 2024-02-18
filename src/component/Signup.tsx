@@ -30,8 +30,6 @@ const Signup = () => {
         console.error(error);
       });
   };
-
-
   return (
     <View style={styles.Container}>
       <View style={styles.SignupContainer}>
